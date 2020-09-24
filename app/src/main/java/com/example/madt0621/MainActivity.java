@@ -17,11 +17,11 @@ public class MainActivity extends AppCompatActivity {
 
         this.tvMain = findViewById(R.id.tvMainLabel);
     }
-
+//changeText
     public void onBtnChangeClick(View view) {
         this.tvMain.setText("We did something! Yay!");
     }
-
+//changeColor
     public void onBtnChangeColor(View view) { this.tvMain.setTextColor(Color.RED);
     }
 }
