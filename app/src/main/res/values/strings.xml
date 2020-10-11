@@ -2,7 +2,7 @@
     <string name="app_name">MADT0621</string>
     <string name="selection_chars">Chars</string>
     <string-array name="selection_options">
-        <item>Characters</item>
+        <item>Chars</item>
         <item>Words</item>
         <item>Numbers</item>
     </string-array>
