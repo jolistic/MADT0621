@@ -5,3 +5,4 @@ public class TextCounter {
         return text.length();
     }
 }
+

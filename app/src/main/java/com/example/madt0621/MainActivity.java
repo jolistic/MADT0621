@@ -32,12 +32,20 @@ public class MainActivity extends AppCompatActivity {
     public void onBtnCountCharsClick(View view) {
         String spinnerSelection = spCounterSelection.getSelectedItem().toString();
         String charSelectionOption = getResources().getString(R.string.selection_chars);
+        String wordSelectionOption = getResources().getString(R.string.selection_words);
 
         if(spinnerSelection.equalsIgnoreCase(charSelectionOption)) {
             String userEnteredText = this.txtEnteredText.getText().toString();
             int enteredTextLengthInChars = TextCounter.getCharsCount(userEnteredText);
             this.tvCharsCount.setText(String.valueOf(enteredTextLengthInChars));
         }
+
+        if(spinnerSelection.equalsIgnoreCase(wordSelectionOption)) {
+            String userEnteredText = this.txtEnteredText.getText().toString();
+            int enteredTextLengthInWords = WordCounter.getWordsCount(userEnteredText);
+            this.tvCharsCount.setText(String.valueOf(enteredTextLengthInWords));
+        }
+
         else{
             Toast.makeText(this,"Not implemented", Toast.LENGTH_LONG).show();
         }
